@@ -8,10 +8,13 @@ import com.demo.zejun.repodragger2.foodapp.data.source.FoodsDataSource;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.inject.Singleton;
+
 /**
  * @author lizejun
  * @version 1.0 2016/11/15
  */
+@Singleton
 public class FoodsRemoteDataSource implements FoodsDataSource {
 
     private static final int SERVICE_LATENCY_IN_MILLIS = 5000;

@@ -2,7 +2,7 @@ package com.demo.zejun.repodragger2.foodapp;
 
 import android.app.Application;
 
-import com.demo.zejun.repodragger2.foodapp.data.source.FoodsRepository;
+import com.demo.zejun.repodragger2.foodapp.data.source.DaggerFoodsRepositoryComponent;
 import com.demo.zejun.repodragger2.foodapp.data.source.FoodsRepositoryComponent;
 
 /**
@@ -19,7 +19,7 @@ public class FoodApplication extends Application {
 
         mFoodsRepositoryComponent = DaggerFoodsRepositoryComponent
                 .builder()
-                .applicationModule(new ApplicationModule(this))
+                .applicationModule(new ApplicationModule(getApplicationContext()))
                 .build();
     }
 

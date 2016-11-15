@@ -16,6 +16,7 @@ public class FoodsRepositoryModule {
 
     @Provides
     @Singleton
+    @Remote
     FoodsDataSource provideFoodsRemoteDataSource() {
         return new FoodsRemoteDataSource();
     }

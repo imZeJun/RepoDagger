@@ -10,8 +10,8 @@ import dagger.Component;
  * @author lizejun
  * @version 1.0 2016/11/15
  */
-@Component(modules = {FoodsRepositoryModule.class, ApplicationModule.class})
 @Singleton
+@Component(modules = {FoodsRepositoryModule.class, ApplicationModule.class})
 public interface FoodsRepositoryComponent {
     FoodsRepository getFoodsRepository();
 }
